@@ -1,0 +1,51 @@
+<html>
+<input type="text" name="dara" id="uno">
+<select onchange="getValue(this);">
+<option value="default" selecciona>selecciona una op</option>
+<option  value="resta">resta</option>
+<option  value="suma">suma</option>
+<option  value="mul">multiplicacion</option>
+</select>
+<input type="text" name="dara" id="dos">
+
+<div id="resquest">
+<script>
+function getValue(option) {
+    if(option.value=="suma"){
+var un = document.getElementById("uno").value;
+     var d = document.getElementById("dos").value;
+let re 
+re = parseFloat(un) + parseFloat(d);
+var m = re
+document.getElementById("resquest").innerHTML= m;
+
+
+}
+
+    else if(option.value=="resta")
+
+{
+var un = document.getElementById("uno").value;
+     var d = document.getElementById("dos").value;
+let re 
+re = parseFloat(un) - parseFloat(d);
+var m = re
+document.getElementById("resquest").innerHTML= m;
+
+}
+  else if(option.value=="mul")
+
+{
+var un = document.getElementById("uno").value;
+     var d = document.getElementById("dos").value;
+let re 
+re = parseFloat(un) * parseFloat(d);
+var m = re
+document.getElementById("resquest").innerHTML= m;
+
+}
+     
+
+}
+</script>
+</html>
